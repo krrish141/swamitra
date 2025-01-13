@@ -89,8 +89,16 @@ if (mysqli_num_rows($result) > 0) {
 
 <div class="author-page-area pt-100 pb-100">
     <div class="container">
-        <div class="row d-flex justify-content-center">
-            <div class="col-lg-4 col-md-6">
+     
+
+        
+
+
+        <div class="portfolio-details-area pt-100 pb-70">
+            <div class="container">
+                <div class="row">
+                
+                <div class="col-lg-4 col-md-6">
                 <!-- Profile Card -->
                 <div class="single-blog-card blog-card-three">
                     <div class="blog-img">
@@ -126,92 +134,45 @@ if (mysqli_num_rows($result) > 0) {
                     </div>
                 </div>
             </div>
-        </div>
 
-        <a href="./logout.php">
-        <button>Logout</button></a>
-
-        <!-- <div class="portfolio-details-area pt-100 pb-70">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8">
-                        <div class="single-portfolio-details-content">
-                            <div class="portfolio-img">
-                                <img src="assets/images/portfolio/portfolio-details-img-1.webp" alt="portfolio">
-                            </div>
-                            <h3>About The Services</h3>
-                            <div class="row">
-                                <div class="col-lg-4 col-sm-6 col-md-4">
-                                    <div class="single-portfolio-card2 d-flex align-items-center">
+                    <div class="col-lg-4">
+                    <h2>Current policies</h2>
+                        <div class="portfolio-details-card">
+                        <div class="single-portfolio-card2 d-flex align-items-center">
                                         <div class="services-icon">
                                             <img src="assets/images/services/couple.svg" alt="couple">
                                         </div>
                                         <h3>Life Insurance</h3>
                                     </div>
-                                </div>
-                                <div class="col-lg-4 col-sm-6 col-md-4">
-                                    <div class="single-portfolio-card2 d-flex align-items-center">
-                                        <div class="services-icon">
-                                            <img src="assets/images/services/heart.svg" alt="heart">
-                                        </div>
-                                        <h3>Health Insurance</h3>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-sm-12 col-md-4">
-                                    <div class="single-portfolio-card2 d-flex align-items-center">
-                                        <div class="services-icon">
-                                            <img src="assets/images/services/home.svg" alt="home">
-                                        </div>
-                                        <h3>Home Insurance</h3>
-                                    </div>
-                                </div>
+                            
+                            <div class="portfolio-client d-flex align-items-center justify-content-between">
+                                <span>Policy Name:</span>
+                                <p> Life Shield Plan </p>
+                            </div>
+                            <div class="portfolio-client d-flex align-items-center justify-content-between">
+                            <span> Policy Number: </span> <p>#123456789</p>
+                            </div>
+                            <div class="portfolio-client d-flex align-items-center justify-content-between">
+                                <span>Premium Amount :</span>
+                                <p>₹5,000/month</p>
+                            </div>
+                            <div class="portfolio-client d-flex align-items-center justify-content-between">
+                                <span>Next Due Date :</span>
+                                <p>25 Jan 2025</p>
+                            </div>
+                            <div class="portfolio-client d-flex align-items-center justify-content-between">
+                                <span>Coverage Details :</span>
+                                <p>₹50,00,000</p>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="portfolio-details-card">
-                            <h2>Portfolio Details</h2>
-                            <div class="portfolio-client d-flex align-items-center justify-content-between">
-                                <span>Client :</span>
-                                <p>John Duo</p>
-                            </div>
-                            <div class="portfolio-client d-flex align-items-center justify-content-between">
-                                <span>Category :</span>
-                                <p>Insurance</p>
-                            </div>
-                            <div class="portfolio-client d-flex align-items-center justify-content-between">
-                                <span>Date :</span>
-                                <p>27 - 09 - 2024</p>
-                            </div>
-                            <div class="portfolio-client d-flex align-items-center justify-content-between">
-                                <span>Year :</span>
-                                <p>2024</p>
-                            </div>
-                            <div class="portfolio-client d-flex align-items-center justify-content-between">
-                                <span>Location :</span>
-                                <p>Event HQ 24 Fifth st, USA</p>
-                            </div>
-                        </div>
-                        <div class="help-contact-card">
-                            <div class="help-img">
-                                <img src="assets/images/portfolio/portfolio-details-img-4.webp" alt="portfolio">
-                            </div>
-                            <h3>How Can We Help</h3>
-                            <p>Cicero are also reproduced in theirm accompanied by English versions from the
-                                translation.</p>
-                            <div class="call-experts">
-                                <div class="phone-call">
-                                    <img src="assets/images/phone-call.svg" alt="phone-call">
-                                </div>
-                                <span>Call To Our Experts</span>
-                                <a href="tel:(+0188)76898708">(+0188) 768 98708</a>
-                            </div>
-                        </div>
+                       
                     </div>
                 </div>
 
             </div>
-        </div> -->
+        </div>
+    </div>
+
     </div>
 
     <!-- End Dashboard Area -->

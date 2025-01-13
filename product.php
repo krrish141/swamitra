@@ -1,3 +1,5 @@
+
+
 <?php
 // Database connection
 include('config.php');
@@ -63,6 +65,12 @@ while ($row2 = mysqli_fetch_assoc($result2)) {
 
 <?php
 session_start();
+
+// Redirect to login page if user is not logged in
+if (!isset($_SESSION['user_id'])) {
+    header('Location: login.php');
+    exit(); // Ensure no further code is executed
+}
 
 // If the user is logged in, fetch the user data from the database
 $user = null;

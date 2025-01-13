@@ -11,8 +11,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $price = filter_input(INPUT_POST, 'price', FILTER_SANITIZE_NUMBER_FLOAT, FILTER_FLAG_ALLOW_FRACTION);
 
     // Validate required fields
-    if (!$userId || !$userName || !$policyId || !$price) {
-        die("Invalid input provided.");
+    if (empty($userId) || empty($userName) || empty($policyId) || empty($price)) {
+        die("Invalid input provided. All fields are required.");
     }
 
     // Generate transaction and order IDs
@@ -25,6 +25,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
          VALUES (?, ?, ?, ?, ?, ?, ?)"
     );
     $paymentStatus = 'PENDING'; // Initial payment status
+    if (!$stmt) {
+        die("Failed to prepare the database statement. Error: " . $conn->error);
+    }
     $stmt->bind_param('issdsss', $userId, $userName, $policyId, $price, $transactionId, $orderId, $paymentStatus);
 
     if (!$stmt->execute()) {
@@ -40,7 +43,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $redirectUrl = 'payment-success.php'; // Redirect URL after payment success
     $name = "Tutorials Website"; // Your business or short name
     $description = 'Payment for Policy ID ' . htmlspecialchars($policyId); // Payment description
-    $amountInPaise = $price * 100; // Amount in paise (INR)
+    $amountInPaise = intval($price * 100); // Convert amount to paise (integer)
 
     // Prepare payment request data
     $paymentData = [
