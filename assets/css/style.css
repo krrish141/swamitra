@@ -5917,7 +5917,7 @@ Start Shape Animation
         }
 
         .services-icon img {
-            max-width: 50px;
+            max-width: 120px;
         }
         .single-services-card:hover, .single-services-card1:hover {
     transform: scale(1.05); /* Slight zoom on hover */

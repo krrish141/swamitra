@@ -177,10 +177,10 @@ while ($row = mysqli_fetch_assoc($result)) {
     <div class="price-button" style="cursor: pointer;">
         <form method="POST" action="payment.php" style="display: inline;">
 
-            <input type="text" name="policy_id" value="<?php echo $post['id']; ?>">
-            <input type="text" name="price" value="<?php echo $post['Price']; ?>">
-            <input type="text" name="user_id" value="<?php echo htmlspecialchars($_SESSION['user_id']); ?>">
-            <input type="text" name="user_name" value="<?php echo htmlspecialchars($_SESSION['user_name']); ?>">
+            <input type="hidden" name="policy_id" value="<?php echo $post['id']; ?>">
+            <input type="hidden" name="price" value="<?php echo $post['Price']; ?>">
+            <input type="hidden" name="user_id" value="<?php echo htmlspecialchars($_SESSION['user_id']); ?>">
+            <input type="hidden" name="user_name" value="<?php echo htmlspecialchars($_SESSION['user_name']); ?>">
             
 
             <button type="submit" style="color: white; text-decoration: none; background: none; border: none; cursor: pointer;">

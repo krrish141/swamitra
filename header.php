@@ -78,7 +78,7 @@
     <div class="header-area">
         <div class="container-fluid">
             <div class="row align-items-center">
-                <div class="col-lg-6 col-sm-6 col-md-6">
+                <div class="col-lg-5 col-sm-6 col-md-6">
                     <div class="header-right-content text-satrt">
                         <ul class="list-inline">
                             <li class="d-inline">
@@ -94,7 +94,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-3 col-md-3">
+                <div class="col-lg-2 col-sm-3 col-md-3">
                     <div class="header-left-bar-text">
                         <ul class="list-inline">
                             <li>
@@ -123,7 +123,7 @@
 
 
 
-                <div class="col-lg-3 col-sm-9 col-md-9">
+                <div class="col-lg-5 col-sm-9 col-md-9">
                     <div class="header-right-content text-end">
                         <div class="others-options d-flex align-items-center justify-content-end">
                             <?php if (isset($_SESSION['user_id'])): ?>

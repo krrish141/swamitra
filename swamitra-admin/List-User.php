@@ -29,7 +29,7 @@ if($_GET['resid'])
 
 <head>
 
-    <title> | Manage Categories</title>
+    <title> Swamitra Admin</title>
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/core.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/components.css" rel="stylesheet" type="text/css" />
@@ -132,7 +132,7 @@ if($_GET['resid'])
                                                     <th>Mobile</th>
                                                     <th>Status</th>
                                                     <th>Date</th>
-                                                    <th>Action</th>
+                                                    <th>Deactivate</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -151,24 +151,22 @@ if($_GET['resid'])
                                                     <td><?php echo htmlentities($row['name']); ?></td>
                                                     <td><?php echo htmlentities($row['email']); ?></td>
                                                     <td><?php echo htmlentities($row['mobile']); ?></td>
-                                                    <td style="margin-top: 5px;"
-                                                        class="btn <?php echo $row['Is_Active'] == 1 ? 'btn-success' : 'btn-danger'; ?>">
-                                                        <?php 
-        echo $row['Is_Active'] == 1 ? 'Active' : 'Deactive'; 
-    ?>
+                                                    <td style="margin-top: 5px;" class="btn <?php echo $row['Is_Active'] == 1 ? 'btn-success' : 'btn-danger'; ?>">
+                                                        <?php   echo $row['Is_Active'] == 1 ? 'Active' : 'Deactive'; ?>
                                                     </td>
 
                                                     <td>
                                                         <?php 
-                    // Assuming 'created_at' is stored in a datetime format, you can format it as needed
-                    echo date('d-m-Y H:i:s', strtotime($row['created_at']));
-                ?>
+                                                               // Assuming 'created_at' is stored in a datetime format, you can format it as needed
+                                                               echo date('d-m-Y H:i:s', strtotime($row['created_at']));
+                                                           ?>
                                                     </td>
                                                     <td>
 
                                                         <a
-                                                        href="List-User.php?rid=<?php echo htmlentities($row['id']); ?>&&action=del">
-                                                            <i class="fa fa-lock" style="color: #f05050 ; font-size: 20px"
+                                                            href="List-User.php?rid=<?php echo htmlentities($row['id']); ?>&&action=del">
+                                                            <i class="fa fa-lock"
+                                                                style="color: #f05050 ; font-size: 20px"
                                                                 title="Deactivate User"></i>
                                                         </a>
 
@@ -217,7 +215,7 @@ if($_GET['resid'])
                                                     <th>Mobile</th>
                                                     <th>Status</th>
                                                     <th>Date</th>
-                                                    <th>Action</th>
+                                                    <th>Activate</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -250,10 +248,11 @@ if($_GET['resid'])
                 ?>
                                                     </td>
                                                     <td>
-                                                  
+
                                                         <a
                                                             href="List-User.php?resid=<?php echo htmlentities($row['id']); ?>&&action=del">
-                                                            <i class="ion-arrow-return-right" style="color: #f05050;font-size: 20px"
+                                                            <i class="ion-arrow-return-right"
+                                                                style="color: #f05050;font-size: 20px"
                                                                 title="Restore User"></i>
                                                         </a>
                                                     </td>

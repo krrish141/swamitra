@@ -47,7 +47,7 @@
                         </li>
 
                         <li>
-                            <a href="#"><i class="bx bx-chevron-right"></i>Connect us</a>
+                            <a href="./contact.php"><i class="bx bx-chevron-right"></i>Connect us</a>
                         </li>
                     </ul>
                 </div>

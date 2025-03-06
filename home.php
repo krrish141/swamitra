@@ -155,7 +155,7 @@
 <style>
    .banner-two-area .swiper-slide img {
       max-width: 100%;
-      height: auto;
+      height: 100vh;
    }
    .banner-two-area .swiper-slide h1 {
     font-weight: 700;
@@ -660,60 +660,42 @@
                <div class="section-title left-title">
                   <!-- <span class="top-title">Testimonials</span> -->
                   <h2>What Our Customers Says</h2>
-                  <p>It is easy and straightforward to distinguish. For free time, when we have the option to solve it, nothing prevents us from doing what we want to do the most.</p>
+                  <p>Our customers appreciate the simplicity and ease of use, allowing them to make the most of their time and focus on what truly matters.</p>
                </div>
                <div class="testimonials-slider owl-carousel owl-theme">
                   <div class="testimonials-item">
-                     <div class="testimonials-client d-flex align-items-center">
+                     <!-- <div class="testimonials-client d-flex align-items-center">
                         <img src="assets/images/testimonials/testimonials-img-4.webp" alt="testimonials">
                         <div class="testimonials-text">
                            <h3 style="color:#202020;">Frank Senbeans</h3>
                            
-                        </div>
-                     </div>
+                        </div> 
+                     </div> -->
                      <div class="testimonials-card">
                         <div class="quote-icon">
                            <img src="assets/images/testimonials/quote.svg" alt="quote">
                         </div>
-                        <p>Which is the same as saying through shrinking from toil and pain is
-                           cases are perfectly simple and easy to distinguish in a free hour whenour power of choice is untrammelled and when nothing.
+                        <p>Setting a role model principle director Kamlesh Vijayanand Kolge has registered his own Axis Max Life Insurance Policy paying a premium of Rs. 3,25,000 plus taxes.
                         </p>
                      </div>
                   </div>
                   <div class="testimonials-item">
-                     <div class="testimonials-client d-flex align-items-center">
+                     <!-- <div class="testimonials-client d-flex align-items-center">
                         <img src="assets/images/testimonials/testimonials-img-2.webp" alt="testimonials">
                         <div class="testimonials-text">
                            <h3 style="color:#202020;">Ash Wednesday</h3>
                           
                         </div>
-                     </div>
+                     </div> -->
                      <div class="testimonials-card">
                         <div class="quote-icon">
                            <img src="assets/images/testimonials/quote.svg" alt="quote">
                         </div>
-                        <p>Which is the same as saying through shrinking from toil and pain is
-                           cases are perfectly simple and easy to distinguish in a free hour whenour power of choice is untrammelled and when nothing.
+                        <p>Setting another example in general insurance taken out tata aig policy of motor bike and grand vitara a family vehicle.
                         </p>
                      </div>
                   </div>
-                  <div class="testimonials-item">
-                     <div class="testimonials-client d-flex align-items-center">
-                        <img src="assets/images/testimonials/testimonials-img-3.webp" alt="testimonials">
-                        <div class="testimonials-text">
-                           <h3 style="color:#202020;">Graham Cracker</h3>
-                          
-                        </div>
-                     </div>
-                     <div class="testimonials-card">
-                        <div class="quote-icon">
-                           <img src="assets/images/testimonials/quote.svg" alt="quote">
-                        </div>
-                        <p>Which is the same as saying through shrinking from toil and pain is
-                           cases are perfectly simple and easy to distinguish in a free hour whenour power of choice is untrammelled and when nothing.
-                        </p>
-                     </div>
-                  </div>
+                 
                </div>
             </div>
          </div>
